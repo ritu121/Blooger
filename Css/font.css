@@ -1,0 +1,22 @@
+
+/* --font-family abel ---*/
+
+@font-face{
+    font-family: Abel;
+    src:url("../fonts/Abel/Abel-Regular.ttf");
+}
+ /*----- font-family playball --- */
+@font-face{
+    font-family: playball;
+    src:url("../fonts/Playball/Playball-Regular.ttf");
+}
+@font-face{
+    font-family:roboto;
+    src:url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family:slabo;
+    src:url("../fonts/Slabo_27px/Slabo27px-Regular.ttf");
+}
+
+

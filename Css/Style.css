@@ -1,0 +1,219 @@
+
+@import url('../Css/font.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*----- Global Classes--------- */
+
+a{
+    text-decoration: none;
+    color:var(--text-gray)
+    
+}
+ .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ ul{
+    list-style-type:none;
+ }
+
+
+ :root{
+ /*----- Theme color -----------*/
+  
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    
+    /* gardient-color */
+    --sky: linear-gradient(to right, #67b26f, #4ca2cd);
+
+
+/*------- Theme font-Family----- */
+    --Abel:'Abel',cursive;
+    --Playball:'Playball',cusive;
+    --Roboto:'Roboto',cursive;
+    --Slabo:'Slabo',cusive;
+ }
+
+ h3{
+    margin: 0.3rem;
+    color: white;
+}
+h1{
+    font-family: var(--Playball);
+    color:rgb(245, 245, 127);
+    font-size: 2.5rem;
+    margin:0.3rem;
+
+ }
+ btn{
+     border: none;
+     border-radius: 2rem;
+     padding: 1rem 3rem;
+     font-family:var(--Roboto);
+     cursor: pointer;
+ }
+/*----- Global Classes--------- */
+
+/*---------- navbar------------- */
+
+.nav{
+    background-color:rgb(225, 252, 225);
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow:hidden;
+    transition:height 1s ease-in-out;
+   
+}
+.toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+ .toggle-icons{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.7rem 0;
+ }
+ .toggle-icons i{
+     color:var(--text-gray);
+     font-size: 1.4rem;
+ 
+}
+.nav-menu {
+    justify-content: space-between;
+    /* border: 2px solid navy; */
+
+}
+.nav-item{
+    display: flex;
+    margin: 0;
+}
+.nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+
+}
+
+.nav-link:hover{
+    background-color: var(--midnight);
+    
+}
+
+.nav-link:hover a{
+    color: var(--white);
+}
+
+
+.social{
+    padding: 1.4rem;
+
+}
+.social i{
+     padding: 0.2rem;
+}
+.social i:hover{
+    color:grey;
+}
+.nav-brand a{
+    font-size: 1.7rem;
+    padding: 1rem 0; 
+    font-family:playball;
+    font-size: 1.6rem;
+
+}
+.collapse{
+   height: 10rem;   
+}
+
+/*-----x----- navbar------x------- */
+
+/*--------- main site content -------------*/
+   /* -------site-title --------*/
+
+     .site-title{
+         background-image: url(../assets/Background-image.png);
+         background-size: cover;
+         height:110vh;
+         display: flex;
+         justify-content: center;
+     }
+
+     .site-background{
+          padding: 10rem;
+          text-align: center;
+        
+     }
+    
+   .btn{
+       margin: 1.8rem;
+       background: var(--sky);
+       border: none;
+       border-radius: 2rem;
+       padding: 1rem 2.5rem;
+       font-family:var(--Roboto);
+       cursor: pointer;
+   }
+   .btn:hover{
+     background: transparent;
+     color: white;
+     border: 1px solid white;
+   }
+   /* ----x---site-title ----x----*/
+
+   /* ------carousels ----------*/
+   .blog{
+           background: url('../assets/Abract01.png');
+           background-repeat: no-repeat;
+           background-position: right;
+           height: 100vh;
+           width:100%;    
+    }
+   .blog-content{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       width: 80%;
+       margin: 3rem 2rem;
+       box-shadow: 0.15px;
+   }
+
+   /* ----x--carousels ----x------*/
+
+/*-----x---- main site content-------x------*/
+
+/* ----ViewPort less than or equal to 750px--------- ---- */
+
+@media only screen and (max-width:750px){
+    .nav-menu{ 
+      flex-direction: column;
+
+    }
+    .toggle-collapse{
+        display:initial;
+    }
+
+
+}
+
+
+/* -x---ViewPort less than or equal to 750px-----x---- ---- */
+
+
+
+
+
+
